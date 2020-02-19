@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    height: 95px;
+    background-color: rgb(50, 55, 70);
+}
+
+nav {
+    grid-area: n;
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin-top: 38px;
+    margin-right: 35px;
+    cursor: default;
+}
+
+nav ul li{
+    padding: 0;
+    display: inline;
+    font-weight: 700;
+    font-size: 8.57pt;
+    margin: 0 5px;
+    letter-spacing: 0.23px;
+}
+
+.menu-decoration {
+    color: rgb(73, 78, 98);
+}
+
+.menu-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.menu-link:hover {
+    color: rgb(240, 108, 100);
+}
+
+.active {
+    color: rgb(240, 108, 100);
+}
+
+.main {
+    max-width: 1020px;
+    background-color: white;
+}
+
+.navigation {
+    height: 89px;
+    background-color: rgb(45, 48, 58);
+}
+
+.navigation-content {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas:
+        "l n";
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.logo {
+    grid-area: l;
+    padding-top: 30px;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 1.52rem;
+}
+
+.logo span {
+    color: rgb(240, 108, 100);
+}
+
+.slider-block {
+    height: 600px;
+    width: 1020px;
+    margin: 0 auto;
+    background-color: rgb(234, 103, 107);
+}
+
+.slider-block-content {
+    height: 594px;
+    width: 1020px;
+    background-color: rgb(240, 108, 100);
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-areas:
+        "l c r";
+}
+
+.left-button {
+    grid-area: l;
+    margin-right: 11px;
+    margin-bottom: 3px;
+    background-image: url('./assets/chev-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-button:hover {
+    filter: invert(10%);
+    cursor: pointer;
+}
+
+.right-button {
+    grid-area: r;
+    margin-left: 14px;
+    margin-bottom: 3px;
+    background-image: url('./assets/chev-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-button:hover {
+    filter: invert(10%);
+    cursor: pointer;
+}
+
+.iphones {
+    margin-top: 53px;
+    grid-area: c;
+    width: 798px;
+    height: 483px;
+    background-image: url('./assets/phones.png');
+}
+
+.content-area {
+    background-color: rgb(242, 242, 242);
+    max-width: 1020px;
+    margin: 0 auto;
+    color: rgb(102, 109, 137);
+    margin-bottom: 6px;
+}
+
+.content {
+    padding: 59px 40px;
+}
+
+.content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.87rem;
+}
+
+.content p {
+    margin: 19.9px 0 0 0;
+    padding: 0;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    line-height: 30px;
+    letter-spacing: 0.01rem;
+    text-align: justify;
+}
+
+.content-grid {
+    margin-top: 42px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 60px 260px 60px 260px 60px 260px;
+    grid-template-areas:
+        "ld d li i ll l"
+        "lr r ls s lf f";
+}
+
+.content-grid h2 {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-size: 1.1rem;
+    letter-spacing: 0.012rem;
+}
+
+p.content-grid {
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0 20px;
+    font-size: 0.7rem;
+    letter-spacing: 0.032rem;
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+.letspace {
+    letter-spacing: 0.0303rem;
+}
+
+.ld, .li, .ll {
+    margin-top: 4px;
+    align-items: center;
+}
+
+.r, .s, .f {
+    margin-top: 32px;
+}
+
+.lr, .ls, .lf {
+    margin-top: 35px;
+    align-items: center;
+}
+
+.ld {
+    grid-area: ld;
+    margin-left: 1px;
+}
+
+.d {
+    grid-area: d;
+}
+
+.li {
+    grid-area: li;
+}
+
+.i {
+    grid-area: i;
+}
+
+.ll {
+    grid-area: ll;
+}
+
+.l {
+    grid-area: l;
+}
+
+.lr {
+    grid-area: lr;
+} 
+
+.r {
+    grid-area: r;
+} 
+
+.ls {
+    grid-area: ls;
+}
+
+.s {
+    grid-area: s;
+} 
+
+.lf {
+    grid-area: lf;
+} 
+
+.f {
+    grid-area: f;
+}
